@@ -7,7 +7,7 @@ int main() {
     int cantidad;
     string tipo, estado, rendimiento, observacion;
 
-    system("title Informes v0.1.1");
+    system("title Informes v0.1.2");
 
     cout << "Cantidad de dispositivos: ";
     cin >> cantidad;
@@ -59,7 +59,7 @@ int main() {
         }
         
         if (!observacion.empty()) {
-            file << "Observacion: " << observacion << endl;
+            file << endl << observacion << endl;
         }
     }
 
