@@ -1,13 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <cctype>
+
 using namespace std;
 
 int main() {
     int cantidad;
     string tipo, estado, rendimiento, observacion;
 
-    system("title Informes v0.1.2");
+    system("title Informes v0.1.3");
 
     cout << "Cantidad de dispositivos: ";
     cin >> cantidad;
@@ -51,15 +52,15 @@ int main() {
         cout << endl;
 
         if (!estado.empty()) {
-            file << "Estado fisico del dispositivo: " << estado << endl;
+            file << "Estado fisico: " << estado << endl;
         }
         
         if (!rendimiento.empty()) {
-            file << "Rendimiento dispositivo: " << rendimiento << endl;
+            file << "Rendimiento: " << rendimiento << endl << endl;
         }
         
         if (!observacion.empty()) {
-            file << endl << observacion << endl;
+            file << observacion << endl << endl;
         }
     }
 
